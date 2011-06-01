@@ -1,0 +1,14 @@
+application: rinthecloud
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+
+- url: /(google316bd1801e5001cc\.html)
+  static_files: google-verification/\1
+  upload: google-verification/(.*)
+
+
+- url: /.*
+  script: rinthecloud.py
